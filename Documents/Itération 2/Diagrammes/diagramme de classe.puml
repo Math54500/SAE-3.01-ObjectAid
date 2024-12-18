@@ -7,6 +7,8 @@ interface Observateur{}
 
 class VueAfficheur{}
 
+class Tree{}
+
 class Main{}
 
 class Model{}
@@ -17,5 +19,6 @@ Model <- VueAfficheur
 Observateur <-- Model
 Observateur <|.. VueAfficheur
 Main -> VueAfficheur
+VueAfficheur -> Tree
 
 @enduml

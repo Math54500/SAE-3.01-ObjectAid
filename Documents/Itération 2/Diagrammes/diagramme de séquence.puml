@@ -1,12 +1,20 @@
 @startuml
 'https://plantuml.com/sequence-diagram
 
-actor Utilisateur as user
 participant Main
-participant Model
+participant vueAfficheur
+participant Tree
 
-user --> Main
 activate Main
-Main --> Model **
+
+Main -> vueAfficheur **
+activate vueAfficheur
+vueAfficheur -> Tree
+activate Tree
+vueAfficheur <-- Tree
+deactivate Tree
+Main <-- vueAfficheur
+deactivate vueAfficheur
+deactivate Main
 
 @enduml
