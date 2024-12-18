@@ -1,8 +1,7 @@
 package org.example.sae301objectaid;
 
-import javafx.application.Application;
 import javafx.scene.control.Label;
-import javafx.stage.Stage;
+import java.io.File;
 
 public class VueAfficheur implements Observateur{
     private Model model ;
@@ -22,6 +21,8 @@ public class VueAfficheur implements Observateur{
     }
 
     public void afficher() {
-        label.setText("poutre");
+        File f = new File("C:\\Users\\Maths\\Desktop\\SAE-3.01-ObjectAid\\Plugin ObjectAid\\src\\main\\java\\org\\example\\sae301objectaid");
+        String texte = Tree.printDirectoryTree(f);
+        label.setText(texte);
     }
 }
