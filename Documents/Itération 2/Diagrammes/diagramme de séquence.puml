@@ -1,0 +1,12 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+actor Utilisateur as user
+participant Main
+participant Model
+
+user --> Main
+activate Main
+Main --> Model **
+
+@enduml
