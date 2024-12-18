@@ -1,0 +1,20 @@
+n'hésitez pas à le modifier
+
+@startuml
+title objectAid
+
+class Principale{
++main()
+
+}
+
+interface Observateur{
+}
+
+'''relation
+Model <-- Principale 
+Model <- Vue
+Observateur <.. Vue
+Model -> Observateur
+Principale <- Vue
+@enduml

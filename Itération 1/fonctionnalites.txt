@@ -1,0 +1,3 @@
+<p>Fonctionnalités de cette itération :</p>
+- Affichage de la page
+- Explorateur de fichiers
