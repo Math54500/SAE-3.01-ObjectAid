@@ -3,13 +3,6 @@ package org.example.sae301objectaid;
 import java.io.File;
 public class Tree {
 
-    /**
-     * Pretty print the directory tree and its file names.
-     *
-     * @param folder
-     *            must be a folder.
-     * @return
-     */
     public static String creerArbre(File folder) {
         if (!folder.isDirectory()) {
             throw new IllegalArgumentException("Erreur : chemin mal spécifié ");
@@ -26,7 +19,7 @@ public class Tree {
             throw new IllegalArgumentException("Erreur : chemin mal spécifié");
         }
         sb.append(ajouterEspace(indent));
-        sb.append("+--");
+        sb.append("+-- ");
         sb.append(folder.getName());
         sb.append("/");
         sb.append("\n");
@@ -42,7 +35,7 @@ public class Tree {
 
     private static void ecrireFichier(File file, int indent, StringBuilder sb) {
         sb.append(ajouterEspace(indent));
-        sb.append(">--");
+        sb.append(">-- ");
         sb.append(file.getName());
         sb.append("\n");
     }
