@@ -17,6 +17,7 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         Model model = new Model() ;
         VueAfficheur vueAfficheur = new VueAfficheur(model) ;
+        model.enregistrerObservateur(vueAfficheur);
 
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("hello-view.fxml"));
         GridPane pane = new GridPane();
@@ -31,7 +32,6 @@ public class Main extends Application {
         pane.add(label2, 1, 0);
         pane.add(vBox, 0, 1);
         vBox.getChildren().add(labelAfficheur) ;
-        vueAfficheur.afficher() ;
         pane.add(canvas, 1,1);
         pane.getColumnConstraints().add(new ColumnConstraints(300));
         pane.getColumnConstraints().add(new ColumnConstraints(600));
@@ -39,6 +39,7 @@ public class Main extends Application {
         stage.setTitle("plugin ObjectAld");
         stage.setScene(scene);
         stage.show();
+        model.notifierObservateurs();
     }
 
     public static void main(String[] args) {
