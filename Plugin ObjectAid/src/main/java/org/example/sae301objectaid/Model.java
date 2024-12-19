@@ -31,7 +31,6 @@ public class Model implements Sujet {
 
     public String afficherFichiers(){
         File f = new File(".\\Plugin ObjectAid\\src");
-        System.out.println("poutre");
         return Tree.creerArbre(f);
     }
 
