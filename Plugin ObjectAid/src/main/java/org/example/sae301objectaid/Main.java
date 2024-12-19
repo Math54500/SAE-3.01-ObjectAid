@@ -24,7 +24,7 @@ public class Main extends Application {
         Label label2 = new Label("Espace dessinable");
         VBox vBox = new VBox();
         Label labelAfficheur = new Label() ;
-        vueAfficheur.ajoutLabel(labelAfficheur) ;
+        vueAfficheur.ajoutLabel(labelAfficheur);
         Canvas canvas  = new Canvas(400, 400);
         pane.setGridLinesVisible(true);
         pane.add(label, 0, 0);
