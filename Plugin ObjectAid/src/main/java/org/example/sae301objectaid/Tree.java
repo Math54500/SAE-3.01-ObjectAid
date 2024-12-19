@@ -10,44 +10,44 @@ public class Tree {
      *            must be a folder.
      * @return
      */
-    public static String printDirectoryTree(File folder) {
+    public static String creerArbre(File folder) {
         if (!folder.isDirectory()) {
-            throw new IllegalArgumentException("folder is not a Directory");
+            throw new IllegalArgumentException("Erreur : chemin mal spécifié ");
         }
         int indent = 0;
         StringBuilder sb = new StringBuilder();
-        printDirectoryTree(folder, indent, sb);
+        creerArbre(folder, indent, sb);
         return sb.toString();
     }
 
-    private static void printDirectoryTree(File folder, int indent,
+    private static void creerArbre(File folder, int indent,
                                            StringBuilder sb) {
         if (!folder.isDirectory()) {
-            throw new IllegalArgumentException("folder is not a Directory");
+            throw new IllegalArgumentException("Erreur : chemin mal spécifié");
         }
-        sb.append(getIndentString(indent));
+        sb.append(ajouterEspace(indent));
         sb.append("+--");
         sb.append(folder.getName());
         sb.append("/");
         sb.append("\n");
         for (File file : folder.listFiles()) {
             if (file.isDirectory()) {
-                printDirectoryTree(file, indent + 1, sb);
+                creerArbre(file, indent + 1, sb);
             } else {
-                printFile(file, indent + 1, sb);
+                ecrireFichier(file, indent + 1, sb);
             }
         }
 
     }
 
-    private static void printFile(File file, int indent, StringBuilder sb) {
-        sb.append(getIndentString(indent));
-        sb.append("+--");
+    private static void ecrireFichier(File file, int indent, StringBuilder sb) {
+        sb.append(ajouterEspace(indent));
+        sb.append(">--");
         sb.append(file.getName());
         sb.append("\n");
     }
 
-    private static String getIndentString(int indent) {
+    private static String ajouterEspace(int indent) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < indent; i++) {
             sb.append("|  ");

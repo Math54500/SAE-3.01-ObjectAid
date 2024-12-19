@@ -21,8 +21,8 @@ public class VueAfficheur implements Observateur{
     }
 
     public void afficher() {
-        File f = new File("C:\\Users\\Maths\\Desktop\\SAE-3.01-ObjectAid\\Plugin ObjectAid\\src\\main\\java\\org\\example\\sae301objectaid");
-        String texte = Tree.printDirectoryTree(f);
+        File f = new File("Plugin ObjectAid\\src\\main\\java\\org\\example\\sae301objectaid");
+        String texte = Tree.creerArbre(f);
         label.setText(texte);
     }
 }
