@@ -1,7 +1,6 @@
 package org.example.sae301objectaid;
 
 import javafx.scene.control.Label;
-import java.io.File;
 
 public class VueAfficheur implements Observateur{
     private Model model ;
@@ -16,13 +15,11 @@ public class VueAfficheur implements Observateur{
     }
 
     @Override
-    public void actualiser(Sujet sujet) {
-        afficher();
+    public void actualiser() {
+        afficher(model.afficherFichiers());
     }
 
-    public void afficher() {
-        File f = new File(".\\Plugin ObjectAid\\src\\main\\java\\org\\example\\sae301objectaid");
-        String texte = Tree.creerArbre(f);
+    public void afficher(String texte) {
         label.setText(texte);
     }
 }

@@ -1,5 +1,6 @@
 package org.example.sae301objectaid;
 
+import java.io.File;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
@@ -24,9 +25,16 @@ public class Model implements Sujet {
 
     public void notifierObservateurs() {
         for (Observateur observateur : this.observateurs) {
-            observateur.actualiser(this);
+            observateur.actualiser();
         }
     }
+
+    public String afficherFichiers(){
+        File f = new File(".\\Plugin ObjectAid\\src");
+        System.out.println("poutre");
+        return Tree.creerArbre(f);
+    }
+
 
 //    public static void genererSource(String nomClasse) throws ClassNotFoundException {
 //        Class<?> c = Class.forName(nomClasse);
