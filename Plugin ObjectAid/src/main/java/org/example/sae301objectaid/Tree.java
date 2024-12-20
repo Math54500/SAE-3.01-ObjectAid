@@ -1,50 +1,45 @@
 package org.example.sae301objectaid;
 
+import javafx.scene.control.TreeItem;
+import javafx.scene.control.TreeView;
+
 import java.io.File;
 public class Tree {
 
-    public static String creerArbre(File folder) {
+    public static TreeItem creerArbre(File folder) {
         if (!folder.isDirectory()) {
             throw new IllegalArgumentException("Erreur : chemin mal spécifié ");
         }
-        int indent = 0;
-        StringBuilder sb = new StringBuilder();
-        creerArbre(folder, indent, sb);
-        return sb.toString();
+        TreeItem<Objet> tree = new TreeItem<>();
+        creerArbre(folder, tree);
+        return tree;
     }
 
-    private static void creerArbre(File folder, int indent,
-                                           StringBuilder sb) {
+    private static void creerArbre(File folder,TreeItem tree) {
         if (!folder.isDirectory()) {
             throw new IllegalArgumentException("Erreur : chemin mal spécifié");
         }
-        sb.append(ajouterEspace(indent));
-        sb.append("+-- ");
-        sb.append(folder.getName());
-        sb.append("/");
-        sb.append("\n");
+
         for (File file : folder.listFiles()) {
             if (file.isDirectory()) {
-                creerArbre(file, indent + 1, sb);
+                Objet doss = new Objet(file.getName());
+                TreeItem<Objet> ndoss = new TreeItem<>(doss);
+
+                tree.getChildren().add(ndoss);
+                creerArbre(file, tree);
             } else {
-                ecrireFichier(file, indent + 1, sb);
+                ecrireFichier(file, tree);
             }
         }
 
     }
 
-    private static void ecrireFichier(File file, int indent, StringBuilder sb) {
-        sb.append(ajouterEspace(indent));
-        sb.append(">-- ");
-        sb.append(file.getName());
-        sb.append("\n");
+    private static void ecrireFichier(File file, TreeItem tree) {
+        Objet fich = new Objet(file.getName());
+        TreeItem<Objet> item = new TreeItem<>(fich);
+        tree.getChildren().add(item);
     }
 
-    private static String ajouterEspace(int indent) {
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < indent; i++) {
-            sb.append("|  ");
-        }
-        return sb.toString();
-    }
+
+
 }

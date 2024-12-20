@@ -2,6 +2,9 @@ package org.example.sae301objectaid;
 
 import javafx.scene.canvas.Canvas;
 
+import javafx.scene.control.TreeItem;
+import javafx.scene.control.TreeView;
+
 import java.io.File;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -32,7 +35,7 @@ public class Model implements Sujet {
         }
     }
 
-    public String afficherFichiers(){
+    public TreeItem afficherFichiers(){
         File f = new File(".\\Plugin ObjectAid\\src");
         return Tree.creerArbre(f);
     }
@@ -45,7 +48,7 @@ public class Model implements Sujet {
         this.canvas = cvs ;
     }
 
-    //    public static void genererSource(String nomClasse) throws ClassNotFoundException {
+//    public static void genererSource(String nomClasse) throws ClassNotFoundException {
 //        Class<?> c = Class.forName(nomClasse);
 //        System.out.println(nomClasse);
 //        for(Field field : c.getDeclaredFields()){
