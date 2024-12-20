@@ -1,5 +1,8 @@
 package org.example.sae301objectaid;
 
+import javafx.scene.control.TreeItem;
+import javafx.scene.control.TreeView;
+
 import java.io.File;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -29,7 +32,7 @@ public class Model implements Sujet {
         }
     }
 
-    public String afficherFichiers(){
+    public TreeItem afficherFichiers(){
         File f = new File(".\\Plugin ObjectAid\\src");
         return Tree.creerArbre(f);
     }

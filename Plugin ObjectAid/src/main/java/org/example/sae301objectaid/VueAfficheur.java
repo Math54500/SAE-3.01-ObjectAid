@@ -1,17 +1,19 @@
 package org.example.sae301objectaid;
 
 import javafx.scene.control.Label;
+import javafx.scene.control.TreeItem;
+import javafx.scene.control.TreeView;
 
 public class VueAfficheur implements Observateur{
     private Model model ;
-    private Label label ;
+    private TreeItem arbre ;
 
     public VueAfficheur(Model mod){
         this.model = mod ;
     }
 
-    public void ajoutLabel(Label l){
-        this.label = l ;
+    public void ajoutArbre(TreeItem l){
+        this.arbre = l ;
     }
 
     @Override
@@ -19,7 +21,7 @@ public class VueAfficheur implements Observateur{
         afficher(model.afficherFichiers());
     }
 
-    public void afficher(String texte) {
-        label.setText(texte);
+    public void afficher(TreeItem arb) {
+        arbre.getChildren().add(arb);
     }
 }
