@@ -13,12 +13,15 @@ public class DessinClasse {
     private int y;
     private Class classe;
 
-    public DessinClasse(int x, int y, Class c, GraphicsContext gc) {
+    public DessinClasse(int x, int y, Class c) {
         this.x = x;
         this.y = y;
+        this.classe = c ;
+    }
+
+    public void dessinerClasse(GraphicsContext gc){
         int y2 = y;
         int hauteurTexte = 10 ;
-        this.classe = c;
         Text nomClasse = new Text(classe.getSimpleName());
         y2 += hauteurTexte ;
         gc.fillText(nomClasse.getText(), x+(100.0/nomClasse.getText().length()), y2);
