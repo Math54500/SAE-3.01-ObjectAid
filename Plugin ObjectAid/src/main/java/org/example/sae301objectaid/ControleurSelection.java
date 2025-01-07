@@ -14,8 +14,8 @@ public class ControleurSelection implements EventHandler<ActionEvent> {
 
     @Override
     public void handle(ActionEvent e) {
-        Button b = (Button) e.getSource();
-        System.out.println("b.getText()");
+
+        System.out.println("poutre de castor");
 
     }
 }

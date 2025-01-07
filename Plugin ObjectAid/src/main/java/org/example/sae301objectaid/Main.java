@@ -28,9 +28,11 @@ public class Main extends Application {
         Label label = new Label("Afficheur de fichier");
         Label label2 = new Label("Espace dessinable");
         VBox vBox = new VBox();
-        TreeItem<String> arbre = new TreeItem<>() ;
-        TreeView<String> arbreView = new TreeView<>(arbre) ;
-        vueAfficheur.ajoutArbre(arbre);
+
+
+        TreeView<String> arbreView = new TreeView<>(model.afficherFichiers()) ;
+        vueAfficheur.ajoutArbre(model.afficherFichiers());
+
         Canvas canvas  = new Canvas(400, 400);
         model.setCanvas(canvas);
         pane.setGridLinesVisible(true);
