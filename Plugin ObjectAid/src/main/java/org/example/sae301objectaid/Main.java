@@ -28,8 +28,8 @@ public class Main extends Application {
         Label label = new Label("Afficheur de fichier");
         Label label2 = new Label("Espace dessinable");
         VBox vBox = new VBox();
-        TreeItem<Objet> arbre = new TreeItem<>() ;
-        TreeView<Objet> arbreView = new TreeView<>(arbre) ;
+        TreeItem<String> arbre = new TreeItem<>() ;
+        TreeView<String> arbreView = new TreeView<>(arbre) ;
         vueAfficheur.ajoutArbre(arbre);
         Canvas canvas  = new Canvas(400, 400);
         model.setCanvas(canvas);
