@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class DessinClasse{
+- x : int
+- y : int
+- classe : Class
++ DessinClasse(x : int, y : int, c : Class, gc : GraphicContext)
++ getX() : int
++ setX(int x) : void
++ getY() : int
++ setY(int y) : void
+}
+
+class VueClasses{
+- model : Model
++ VueClasses(mod : Model)
++ ajoutClasse(c : Class) : void
+}
+
+class Model{
+- canvas : Canvas
+- dessinClasse : DessinClasse
++
+}
+@enduml
