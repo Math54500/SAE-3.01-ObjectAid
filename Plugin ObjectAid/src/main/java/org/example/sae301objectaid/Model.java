@@ -16,6 +16,7 @@ public class Model implements Sujet {
     private final List<Observateur> observateurs ;
     private Canvas canvas ;
     private DessinClasse dessinClasse ;
+    private Tree arbre;
 
 
     public Model() {
