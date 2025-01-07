@@ -1,5 +1,7 @@
 package org.example.sae301objectaid;
 
+import javafx.scene.canvas.Canvas;
+
 import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeView;
 
@@ -11,7 +13,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Model implements Sujet {
-    private final List<Observateur> observateurs;
+    private final List<Observateur> observateurs ;
+    private Canvas canvas ;
 
 
     public Model() {
@@ -37,6 +40,13 @@ public class Model implements Sujet {
         return Tree.creerArbre(f);
     }
 
+    public Canvas getCanvas() {
+        return canvas;
+    }
+
+    public void setCanvas(Canvas cvs) {
+        this.canvas = cvs ;
+    }
 
 //    public static void genererSource(String nomClasse) throws ClassNotFoundException {
 //        Class<?> c = Class.forName(nomClasse);

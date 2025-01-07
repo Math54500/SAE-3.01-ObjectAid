@@ -19,7 +19,9 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         Model model = new Model() ;
         VueAfficheur vueAfficheur = new VueAfficheur(model) ;
-        model.enregistrerObservateur(vueAfficheur);
+        VueClasses vueClasses = new VueClasses(model) ;
+        model.enregistrerObservateur(vueAfficheur) ;
+        model.enregistrerObservateur(vueClasses) ;
 
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("hello-view.fxml"));
         GridPane pane = new GridPane();
@@ -30,6 +32,7 @@ public class Main extends Application {
         TreeView<Objet> arbreView = new TreeView<>(arbre) ;
         vueAfficheur.ajoutArbre(arbre);
         Canvas canvas  = new Canvas(400, 400);
+        model.setCanvas(canvas);
         pane.setGridLinesVisible(true);
         pane.add(label, 0, 0);
         pane.add(label2, 1, 0);
@@ -41,6 +44,7 @@ public class Main extends Application {
         stage.setTitle("plugin ObjectAld");
         stage.setScene(scene);
         stage.show();
+        vueClasses.ajoutClasse(Model.class);
         model.notifierObservateurs();
     }
 
