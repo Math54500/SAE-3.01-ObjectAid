@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/SAE-3.01-ObjectAid.iml" filepath="$PROJECT_DIR$/.idea/SAE-3.01-ObjectAid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SAE-3.01-ObjectAid.iml" filepath="$PROJECT_DIR$/SAE-3.01-ObjectAid.iml" />
     </modules>
   </component>
 </project>
