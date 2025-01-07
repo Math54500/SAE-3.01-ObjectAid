@@ -21,6 +21,15 @@ class VueClasses{
 class Model{
 - canvas : Canvas
 - dessinClasse : DessinClasse
-+
++ getCanvas() : Canvas
++ setCanvas(cvs : Canvas) : void
++ ajoutClasse(c : Class) : void
 }
+
+Observateur <-- Model
+Observateur <|.. VueClasses
+DessinClasse <- Model
+Model <- VueClasses
+Main <-- Model
+Main <-- DessinClasse
 @enduml
