@@ -5,8 +5,8 @@ class DessinClasse{
 - x : int
 - y : int
 - classe : Class
-+ DessinClasse(x : int, y : int, c : Class, gc : GraphicContext)
-+ dessinerClasse() : void
++ DessinClasse(x : int, y : int, c : Class)
++ dessinerClasse(gc : GraphicContext) : void
 + getX() : int
 + setX(int x) : void
 + getY() : int

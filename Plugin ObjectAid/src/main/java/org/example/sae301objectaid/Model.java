@@ -15,7 +15,7 @@ import java.util.List;
 public class Model implements Sujet {
     private final List<Observateur> observateurs ;
     private Canvas canvas ;
-    private DessinClasse dessinClasse ;
+    private ArrayList<DessinClasse> dessinClasses = new ArrayList<DessinClasse>() ;
     private Tree arbre;
 
 
@@ -51,10 +51,14 @@ public class Model implements Sujet {
     }
 
     public void ajoutClasse(Class c){
-        this.dessinClasse = new DessinClasse(20, 20, c, this.canvas.getGraphicsContext2D()) ;
+        this.dessinClasses.add(new DessinClasse(20, 20, c)) ;
     }
 
-//    public static void genererSource(String nomClasse) throws ClassNotFoundException {
+    public ArrayList<DessinClasse> getDessinClasses() {
+        return dessinClasses;
+    }
+
+    //    public static void genererSource(String nomClasse) throws ClassNotFoundException {
 //        Class<?> c = Class.forName(nomClasse);
 //        System.out.println(nomClasse);
 //        for(Field field : c.getDeclaredFields()){
