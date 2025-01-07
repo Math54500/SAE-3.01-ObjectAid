@@ -13,7 +13,11 @@ class DessinClasse{
 + setY(int y) : void
 }
 
-class VueClasses
+class VueClasses{
+- model : Model
++ VueClasses(mod : Model)
++ ajoutClasse(c : Class) : void
+}
 
 class Model{
 - canvas : Canvas
