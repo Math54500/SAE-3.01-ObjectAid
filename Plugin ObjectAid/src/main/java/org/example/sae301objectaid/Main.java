@@ -1,12 +1,14 @@
 package org.example.sae301objectaid;
 
 import javafx.application.Application;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.control.Label;
 import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
@@ -29,8 +31,9 @@ public class Main extends Application {
         Label label2 = new Label("Espace dessinable");
         VBox vBox = new VBox();
 
-
-        TreeView<String> arbreView = new TreeView<>(model.afficherFichiers()) ;
+        ControleurSelection controleurSelection = new ControleurSelection(model) ;
+        TreeView<String> arbreView = new TreeView<>(model.afficherFichiers());
+        arbreView.setOnMouseClicked(controleurSelection);
         vueAfficheur.ajoutArbre(model.afficherFichiers());
 
         Canvas canvas  = new Canvas(400, 400);
