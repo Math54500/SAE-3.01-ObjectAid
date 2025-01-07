@@ -15,6 +15,7 @@ import java.util.List;
 public class Model implements Sujet {
     private final List<Observateur> observateurs ;
     private Canvas canvas ;
+    private DessinClasse dessinClasse ;
 
 
     public Model() {
@@ -46,6 +47,10 @@ public class Model implements Sujet {
 
     public void setCanvas(Canvas cvs) {
         this.canvas = cvs ;
+    }
+
+    public void ajoutClasse(Class c){
+        this.dessinClasse = new DessinClasse(20, 20, c, this.canvas.getGraphicsContext2D()) ;
     }
 
 //    public static void genererSource(String nomClasse) throws ClassNotFoundException {
