@@ -5,6 +5,9 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+
 public class DessinClasse {
     private int x;
     private int y;
@@ -22,16 +25,16 @@ public class DessinClasse {
         y2 += 5 ;
         gc.strokeLine(x, y2, x+100, y2);
         y2 += 2 ;
-        for (int i=0; i<2; i++) {
-            Text attribut = new Text("Attribut " + i);
+        for (Field field : classe.getDeclaredFields()) {
+            Text attribut = new Text(field.getName());
             gc.fillText(attribut.getText(), x+(100.0/attribut.getText().length()), y2+hauteurTexte);
             y2 += hauteurTexte;
         }
         y2 += 5 ;
         gc.strokeLine(x, y2, x+100, y2);
         y2 += 2 ;
-        for (int i=0; i<2; i++) {
-            Text methode = new Text("Methode " + i);
+        for (Method method : classe.getMethods()) {
+            Text methode = new Text(method.getName());
             gc.fillText(methode.getText(), x+(100.0/methode.getText().length()), y2+hauteurTexte);
             y2 += hauteurTexte;
         }
