@@ -10,7 +10,8 @@ public class Tree {
         if (!folder.isDirectory()) {
             throw new IllegalArgumentException("Erreur : chemin mal spécifié ");
         }
-        TreeItem<Objet> tree = new TreeItem<>();
+        Objet nf = new Objet(folder.getName());
+        TreeItem<Objet> tree = new TreeItem<>(nf);
         creerArbre(folder, tree);
         return tree;
     }
@@ -21,14 +22,15 @@ public class Tree {
         }
 
         for (File file : folder.listFiles()) {
-            if (file.isDirectory()) {
-                Objet doss = new Objet(file.getName());
-                TreeItem<Objet> ndoss = new TreeItem<>(doss);
 
-                tree.getChildren().add(ndoss);
-                creerArbre(file, tree);
+            Objet doss = new Objet(file.getName());
+            TreeItem<Objet> ndoss = new TreeItem<>(doss);
+            tree.getChildren().add(ndoss);
+
+            if (file.isDirectory()) {
+                creerArbre(file, ndoss);
             } else {
-                ecrireFichier(file, tree);
+                ecrireFichier(file, ndoss);
             }
         }
 
