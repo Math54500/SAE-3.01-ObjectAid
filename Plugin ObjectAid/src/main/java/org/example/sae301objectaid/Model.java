@@ -51,7 +51,15 @@ public class Model implements Sujet {
     }
 
     public void ajoutClasse(Class c){
-        this.dessinClasses.add(new DessinClasse(20, 20, c)) ;
+        double x = Math.random()*(canvas.getWidth()-20) ;
+        double y = Math.random()*(canvas.getHeight()-20) ;
+        for(DessinClasse dessinClasse : dessinClasses){
+            while (dessinClasse.getX()-100<x && x<dessinClasse.getX()+100 && dessinClasse.getY()-100<y && y<dessinClasse.getY()+100){
+                x = Math.random()*(canvas.getWidth()-150) ;
+                y = Math.random()*(canvas.getHeight()-150) ;
+            }
+        }
+        this.dessinClasses.add(new DessinClasse(x, y, c)) ;
     }
 
     public ArrayList<DessinClasse> getDessinClasses() {

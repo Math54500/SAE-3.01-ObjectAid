@@ -36,7 +36,7 @@ public class Main extends Application {
         arbreView.setOnMouseClicked(controleurSelection);
         vueAfficheur.ajoutArbre(model.afficherFichiers());
 
-        Canvas canvas  = new Canvas(400, 400);
+        Canvas canvas  = new Canvas(600, 400);
         model.setCanvas(canvas);
         pane.setGridLinesVisible(true);
         pane.add(label, 0, 0);
