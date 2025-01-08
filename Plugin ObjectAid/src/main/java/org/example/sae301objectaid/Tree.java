@@ -6,6 +6,10 @@ import javafx.scene.control.TreeView;
 import java.io.File;
 public class Tree {
 
+    /**
+     * @param folder Dossier
+     * @return Retourne un arbre
+     */
     public static TreeItem creerArbre(File folder) {
         if (!folder.isDirectory()) {
             throw new IllegalArgumentException("Erreur : chemin mal spécifié ");
@@ -15,6 +19,10 @@ public class Tree {
         return tree;
     }
 
+    /**
+     * @param folder Dossier
+     * @param tree Arbre
+     */
     private static void creerArbre(File folder,TreeItem tree) {
         if (!folder.isDirectory()) {
             throw new IllegalArgumentException("Erreur : chemin mal spécifié");
