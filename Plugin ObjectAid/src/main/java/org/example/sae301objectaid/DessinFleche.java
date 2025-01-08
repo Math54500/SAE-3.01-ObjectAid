@@ -11,6 +11,14 @@ public class DessinFleche {
     private int y1;
     private int y2;
 
+    /**
+     * @param x1 Position X de départ
+     * @param y1 Position Y de départ
+     * @param x2 Position X de fin
+     * @param y2 Position Y de fin
+     * @param gc GraphicsContext
+     * Permet de créer une flèche
+     */
     public DessinFleche(int x1, int y1, int x2, int y2, GraphicsContext gc) {
         this.x1 = x1;
         this.y1 = y1;
