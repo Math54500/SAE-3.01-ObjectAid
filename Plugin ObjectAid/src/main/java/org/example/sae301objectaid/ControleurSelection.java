@@ -11,10 +11,19 @@ public class ControleurSelection implements EventHandler<MouseEvent> {
 
     private Model model;
 
+
+    /**
+     * @param model
+     * Initialise le model
+     */
     public ControleurSelection(Model model) {
         this.model = model;
     }
 
+    /**
+     * @param m
+     * Le handler
+     */
     @Override
     public void handle(MouseEvent m) {
 

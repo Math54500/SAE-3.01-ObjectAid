@@ -13,12 +13,22 @@ public class DessinClasse {
     private double y;
     private Class classe;
 
+    /**
+     * @param x La position x
+     * @param y La position y
+     * @param c La classe
+     * Constructeur
+     */
     public DessinClasse(double x, double y, Class c) {
         this.x = x;
         this.y = y;
         this.classe = c ;
     }
 
+    /**
+     * @param gc
+     * Permet de dessiner le diagramme d'une classe
+     */
     public void dessinerClasse(GraphicsContext gc){
         double y2 = y;
         int hauteurTexte = 10 ;
@@ -46,18 +56,33 @@ public class DessinClasse {
         gc.strokeRect(x,y, largeur, y2);
     }
 
+
+    /**
+     * @return La valeur de X
+     */
     public double getX() {
         return x;
     }
 
+    /**
+     * @param x
+     * Setter de X
+     */
     public void setX(int x) {
         this.x = x;
     }
 
+    /**
+     * @return La valeur de Y
+     */
     public double getY() {
         return y;
     }
 
+    /**
+     * @param y
+     * Setter de Y
+     */
     public void setY(int y) {
         this.y = y;
     }
