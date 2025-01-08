@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Model{
+- dessinClasses : ArrayList<DessinClasse>
++ ajoutClasse(c : Class) : void
+}
+
+class ControleurSelection{
+- model : Model
++ ControleurSelection(model : Model)
++ handle(m : MouseEvent) : void
+}
+
+ControleurSelection -> Model
+@enduml
