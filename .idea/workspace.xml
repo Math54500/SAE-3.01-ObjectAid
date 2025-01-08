@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13048742-1aa6-4d6c-852f-d6f8691c043c" name="Changes" comment="corref">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/ControleurSelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/ControleurSelection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/DessinClasse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/DessinClasse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/VueClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/VueClasses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/ControleurSelection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/ControleurSelection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/DessinClasse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/DessinClasse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Model.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Model.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +102,7 @@
       <workItem from="1734692992438" duration="606000" />
       <workItem from="1736254246734" duration="1270000" />
       <workItem from="1736321558514" duration="636000" />
-      <workItem from="1736341345750" duration="317000" />
+      <workItem from="1736341345750" duration="10928000" />
     </task>
     <task id="LOCAL-00001" summary="modification ControleurSelection 3">
       <option name="closed" value="true" />

@@ -35,7 +35,7 @@ public class Model implements Sujet {
     }
 
     public TreeItem afficherFichiers(){
-        File f = new File(".\\Plugin ObjectAid\\src");
+        File f = new File(".\\out\\production\\SAE-3.01-ObjectAid");
         return Tree.creerArbre(f);
     }
 
@@ -47,45 +47,26 @@ public class Model implements Sujet {
         this.canvas = cvs ;
     }
 
-    public void ajoutClasse(Class c){
-        //try {
-            double x = Math.random() * (canvas.getWidth() - 20);
-            double y = Math.random() * (canvas.getHeight() - 20);
-            //System.out.println(s);
-            //Class<?> c = Class.forName(s);
+    public void ajoutClasse(String s){
+        try {
+            double x = Math.random() * (canvas.getWidth() - 150);
+            double y = Math.random() * (canvas.getHeight() - 150);
+            Class<?> c = Class.forName(s);
             for (DessinClasse dessinClasse : dessinClasses) {
-                while (dessinClasse.getX() - 100 < x && x < dessinClasse.getX() + 100 && dessinClasse.getY() - 100 < y && y < dessinClasse.getY() + 100) {
+                while (dessinClasse.getX() - 200 < x && x < dessinClasse.getX() + 150 && dessinClasse.getY() - 150 < y && y < dessinClasse.getY() + 150) {
                     x = Math.random() * (canvas.getWidth() - 150);
                     y = Math.random() * (canvas.getHeight() - 150);
                 }
             }
-            this.dessinClasses.add(new DessinClasse(x, y, c));
-        //} catch (ClassNotFoundException e){
-        //    throw new RuntimeException() ;
-        //}
+            if (dessinClasses.size()<5){
+                this.dessinClasses.add(new DessinClasse(x, y, c));
+            }
+        } catch (ClassNotFoundException e){
+            throw new RuntimeException() ;
+        }
     }
 
     public ArrayList<DessinClasse> getDessinClasses() {
         return dessinClasses;
     }
-
-    //    public static void genererSource(String nomClasse) throws ClassNotFoundException {
-//        Class<?> c = Class.forName(nomClasse);
-//        System.out.println(nomClasse);
-//        for(Field field : c.getDeclaredFields()){
-//            System.out.println(Modifier.toString(field.getModifiers())+" "+field.getType()+" "+field.getName());
-//        }
-//        for(Method method : c.getDeclaredMethods()){
-//            System.out.print(Modifier.toString(method.getModifiers())+" "+method.getReturnType()+" "+method.getName()+"( ");
-//            Class<?>[] parameterTypes = method.getParameterTypes();
-//            if (parameterTypes.length > 0){
-//                for (int i = 0; i < parameterTypes.length; i++){
-//                    String[] type = parameterTypes[i].getTypeName().split("\\.");
-//                    System.out.print(type[1]+" ");
-//                }
-//            }
-//            System.out.print(")\n");
-//
-//        }
-//    }
 }

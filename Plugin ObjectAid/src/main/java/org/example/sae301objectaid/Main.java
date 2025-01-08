@@ -49,8 +49,6 @@ public class Main extends Application {
         stage.setTitle("plugin ObjectAld");
         stage.setScene(scene);
         stage.show();
-        model.ajoutClasse(Model.class);
-        model.ajoutClasse(VueClasses.class);
         model.notifierObservateurs();
     }
 

@@ -35,13 +35,13 @@ public class DessinClasse {
         int largeur = 150 ;
         Text nomClasse = new Text(classe.getSimpleName());
         y2 += hauteurTexte ;
-        gc.fillText(nomClasse.getText(), x+(largeur/nomClasse.getText().length()), y2);
+        gc.fillText(nomClasse.getText(), x+(largeur/nomClasse.getText().length())/2, y2);
         y2 += 5 ;
         gc.strokeLine(x, y2, x+largeur, y2);
         y2 += 2 ;
         for (Field field : classe.getDeclaredFields()) {
             Text attribut = new Text(field.getName());
-            gc.fillText(attribut.getText(), x+(largeur/attribut.getText().length()), y2+hauteurTexte);
+            gc.fillText(attribut.getText(), x+(largeur/attribut.getText().length())/2, y2+hauteurTexte);
             y2 += hauteurTexte;
         }
         y2 += 5 ;
