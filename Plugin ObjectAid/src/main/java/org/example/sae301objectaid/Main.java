@@ -33,7 +33,7 @@ public class Main extends Application {
 
         ControleurSelection controleurSelection = new ControleurSelection(model) ;
         TreeView<String> arbreView = new TreeView<>(model.afficherFichiers());
-        arbreView.setOnMouseClicked((EventHandler)controleurSelection);
+        arbreView.setOnMouseClicked(controleurSelection);
         vueAfficheur.ajoutArbre(model.afficherFichiers());
 
         Canvas canvas  = new Canvas(400, 400);
