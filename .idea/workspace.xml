@@ -4,44 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     <list default="true" id="13048742-1aa6-4d6c-852f-d6f8691c043c" name="Changes" comment="corref">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documents/Itération 4/diagramme de lien entre le contoleur et le model.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Documents/Itération 4/diagramme de lien entre le contoleur et le model.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/ControleurSelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/ControleurSelection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SAE-3.01-ObjectAid.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SAE-3.01-ObjectAid.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/module-info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Observateur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Observateur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Sujet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Sujet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Tree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/VueAfficheur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/VueAfficheur.class" afterDir="false" />
-=======
-    <list default="true" id="13048742-1aa6-4d6c-852f-d6f8691c043c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/openjfx_javafx_base.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/openjfx_javafx_controls.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/openjfx_javafx_fxml.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-=======
-    <list default="true" id="13048742-1aa6-4d6c-852f-d6f8691c043c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/openjfx_javafx_base.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/openjfx_javafx_controls.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/openjfx_javafx_fxml.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
->>>>>>> Stashed changes
-      <change beforePath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/DessinClasse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/DessinClasse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/module-info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Observateur.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Sujet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Tree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/VueAfficheur.class" beforeDir="false" />
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+      <change beforePath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/VueClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/VueClasses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/ControleurSelection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/ControleurSelection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/DessinClasse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/DessinClasse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/DessinFleche.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/DessinFleche.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Model.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Model.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/VueClasses.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/VueClasses.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

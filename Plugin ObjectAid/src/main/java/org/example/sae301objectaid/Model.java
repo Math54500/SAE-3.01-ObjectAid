@@ -3,12 +3,9 @@ package org.example.sae301objectaid;
 import javafx.scene.canvas.Canvas;
 
 import javafx.scene.control.TreeItem;
-import javafx.scene.control.TreeView;
 
 import java.io.File;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -50,16 +47,22 @@ public class Model implements Sujet {
         this.canvas = cvs ;
     }
 
-    public void ajoutClasse(Class c){
-        double x = Math.random()*(canvas.getWidth()-20) ;
-        double y = Math.random()*(canvas.getHeight()-20) ;
-        for(DessinClasse dessinClasse : dessinClasses){
-            while (dessinClasse.getX()-100<x && x<dessinClasse.getX()+100 && dessinClasse.getY()-100<y && y<dessinClasse.getY()+100){
-                x = Math.random()*(canvas.getWidth()-150) ;
-                y = Math.random()*(canvas.getHeight()-150) ;
+    public void ajoutClasse(String s){
+        try {
+            double x = Math.random() * (canvas.getWidth() - 20);
+            double y = Math.random() * (canvas.getHeight() - 20);
+            System.out.println(s);
+            Class<?> c = Class.forName(s);
+            for (DessinClasse dessinClasse : dessinClasses) {
+                while (dessinClasse.getX() - 100 < x && x < dessinClasse.getX() + 100 && dessinClasse.getY() - 100 < y && y < dessinClasse.getY() + 100) {
+                    x = Math.random() * (canvas.getWidth() - 150);
+                    y = Math.random() * (canvas.getHeight() - 150);
+                }
             }
+            this.dessinClasses.add(new DessinClasse(x, y, c));
+        } catch (ClassNotFoundException e){
+            throw new RuntimeException() ;
         }
-        this.dessinClasses.add(new DessinClasse(x, y, c)) ;
     }
 
     public ArrayList<DessinClasse> getDessinClasses() {

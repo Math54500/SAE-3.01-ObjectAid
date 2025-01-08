@@ -49,7 +49,6 @@ public class Main extends Application {
         stage.setTitle("plugin ObjectAld");
         stage.setScene(scene);
         stage.show();
-        vueClasses.ajoutClasse(Model.class);
         vueClasses.afficher();
         model.notifierObservateurs();
     }
