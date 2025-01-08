@@ -1,5 +1,7 @@
 package org.example.sae301objectaid;
 
+import javafx.scene.canvas.GraphicsContext;
+
 import java.util.ArrayList;
 
 public class VueClasses implements Observateur{
@@ -15,5 +17,12 @@ public class VueClasses implements Observateur{
 
     @Override
     public void actualiser() {
+    }
+
+    public void afficher(){
+        GraphicsContext gc = model.getCanvas().getGraphicsContext2D() ;
+        for (DessinClasse dessinClasse : model.getDessinClasses()){
+            dessinClasse.dessinerClasse(gc);
+        }
     }
 }

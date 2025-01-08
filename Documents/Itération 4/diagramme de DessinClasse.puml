@@ -1,0 +1,36 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class DessinClasse{
+- x : int
+- y : int
+- classe : Class
++ DessinClasse(x : int, y : int, c : Class)
++ dessinerClasse(gc : GraphicContext) : void
++ getX() : int
++ setX(int x) : void
++ getY() : int
++ setY(int y) : void
+}
+
+class VueClasses{
+- model : Model
++ VueClasses(mod : Model)
++ ajoutClasse(c : Class) : void
+}
+
+class Model{
+- canvas : Canvas
+- dessinClasses : ArrayList<DessinClasse>
++ getCanvas() : Canvas
++ setCanvas(cvs : Canvas) : void
++ ajoutClasse(c : Class) : void
+}
+
+Observateur <-- Model
+Observateur <|.. VueClasses
+DessinClasse <- Model
+Model <- VueClasses
+Main <-- Model
+Main <-- DessinClasse
+@enduml
