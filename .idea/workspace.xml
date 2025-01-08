@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13048742-1aa6-4d6c-852f-d6f8691c043c" name="Changes" comment="corref">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documents/Itération 4/diagramme de lien entre le contoleur et le model.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Documents/Itération 4/diagramme de lien entre le contoleur et le model.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/ControleurSelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/ControleurSelection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/Model.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/VueClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/VueClasses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/ControleurSelection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/ControleurSelection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/DessinClasse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/DessinClasse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/DessinFleche.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/DessinFleche.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Model.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Model.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/VueClasses.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/VueClasses.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +33,7 @@
     <setting file="file://$USER_HOME$/AppData/Local/Temp/tmp_7_Model.class" root0="SKIP_INSPECTION" />
     <setting file="file://$USER_HOME$/AppData/Local/Temp/tmp_9_Model.class" root0="SKIP_INSPECTION" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -86,8 +79,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
       </set>
     </attachedChunks>
   </component>
@@ -104,6 +97,7 @@
       <workItem from="1734692992438" duration="606000" />
       <workItem from="1736254246734" duration="1270000" />
       <workItem from="1736321558514" duration="636000" />
+      <workItem from="1736341345750" duration="317000" />
     </task>
     <task id="LOCAL-00001" summary="modification ControleurSelection 3">
       <option name="closed" value="true" />

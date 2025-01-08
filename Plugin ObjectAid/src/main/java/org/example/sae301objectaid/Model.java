@@ -47,12 +47,12 @@ public class Model implements Sujet {
         this.canvas = cvs ;
     }
 
-    public void ajoutClasse(String s){
-        try {
+    public void ajoutClasse(Class c){
+        //try {
             double x = Math.random() * (canvas.getWidth() - 20);
             double y = Math.random() * (canvas.getHeight() - 20);
-            System.out.println(s);
-            Class<?> c = Class.forName(s);
+            //System.out.println(s);
+            //Class<?> c = Class.forName(s);
             for (DessinClasse dessinClasse : dessinClasses) {
                 while (dessinClasse.getX() - 100 < x && x < dessinClasse.getX() + 100 && dessinClasse.getY() - 100 < y && y < dessinClasse.getY() + 100) {
                     x = Math.random() * (canvas.getWidth() - 150);
@@ -60,9 +60,9 @@ public class Model implements Sujet {
                 }
             }
             this.dessinClasses.add(new DessinClasse(x, y, c));
-        } catch (ClassNotFoundException e){
-            throw new RuntimeException() ;
-        }
+        //} catch (ClassNotFoundException e){
+        //    throw new RuntimeException() ;
+        //}
     }
 
     public ArrayList<DessinClasse> getDessinClasses() {

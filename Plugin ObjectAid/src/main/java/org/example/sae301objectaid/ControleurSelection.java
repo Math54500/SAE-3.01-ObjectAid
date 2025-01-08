@@ -31,7 +31,8 @@ public class ControleurSelection implements EventHandler<MouseEvent> {
         TreeItem<String> selectedItem = treeView.getSelectionModel().getSelectedItem();
         if (selectedItem != null) {
             if (selectedItem.getValue().contains(".java")) {
-                model.ajoutClasse(selectedItem.getValue());
+                //model.ajoutClasse(selectedItem.getValue());
+                System.out.println(selectedItem.getValue());
             }
         }
 

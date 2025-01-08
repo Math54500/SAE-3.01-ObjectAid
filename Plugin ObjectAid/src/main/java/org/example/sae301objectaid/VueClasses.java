@@ -15,22 +15,13 @@ public class VueClasses implements Observateur{
         this.model = mod ;
     }
 
-<<<<<<< Updated upstream
-    /**
-     * @param c
-     * Ajoute une classe au model
-     */
-    public void ajoutClasse(Class c){
-       model.ajoutClasse(c) ;
-    }
-
     /**
      * Fait que dalle
      */
-=======
->>>>>>> Stashed changes
+
     @Override
     public void actualiser() {
+        this.afficher() ;
     }
 
     /**
