@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <list default="true" id="13048742-1aa6-4d6c-852f-d6f8691c043c" name="Changes" comment="corref">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/ControleurSelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/ControleurSelection.java" afterDir="false" />
@@ -21,6 +22,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/openjfx_javafx_controls.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/openjfx_javafx_fxml.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+    <list default="true" id="13048742-1aa6-4d6c-852f-d6f8691c043c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/openjfx_javafx_base.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/openjfx_javafx_controls.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/openjfx_javafx_fxml.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/DessinClasse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/DessinClasse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/Model.java" afterDir="false" />
@@ -29,6 +38,9 @@
       <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Sujet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Tree.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/VueAfficheur.class" beforeDir="false" />
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
