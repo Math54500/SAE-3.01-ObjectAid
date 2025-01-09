@@ -50,16 +50,16 @@ public class Model implements Sujet {
 
     public void ajoutClasse(String s){
         try {
-            double x = Math.random() * (canvas.getWidth() - 150);
-            double y = Math.random() * (canvas.getHeight() - 150);
-            Class<?> c = Class.forName(s);
-            for (DessinClasse dessinClasse : dessinClasses) {
-                while (dessinClasse.getX() - 200 < x && x < dessinClasse.getX() + 150 && dessinClasse.getY() - 150 < y && y < dessinClasse.getY() + 150) {
-                    x = Math.random() * (canvas.getWidth() - 150);
-                    y = Math.random() * (canvas.getHeight() - 150);
-                }
-            }
             if (dessinClasses.size()<5){
+                double x = Math.random() * (canvas.getWidth() - 150);
+                double y = Math.random() * (canvas.getHeight() - 150);
+                Class<?> c = Class.forName(s);
+                for (DessinClasse dessinClasse : dessinClasses) {
+                    while (dessinClasse.getX() - 200 < x && x < dessinClasse.getX() + 150 && dessinClasse.getY() - 150 < y && y < dessinClasse.getY() + 150) {
+                        x = Math.random() * (canvas.getWidth() - 150);
+                        y = Math.random() * (canvas.getHeight() - 150);
+                    }
+                }
                 this.dessinClasses.add(new DessinClasse(x, y, c));
             }
         } catch (ClassNotFoundException e){
