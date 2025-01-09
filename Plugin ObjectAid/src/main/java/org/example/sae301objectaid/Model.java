@@ -67,6 +67,10 @@ public class Model implements Sujet {
         }
     }
 
+    public void ajoutFleche(int x1, int y1, int x2, int y2){
+        this.dessinFleches.add(new DessinFleche(x1, y1, x2, y2)) ;
+    }
+
     public ArrayList<DessinClasse> getDessinClasses() {
         return dessinClasses ;
     }
