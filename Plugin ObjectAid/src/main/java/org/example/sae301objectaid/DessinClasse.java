@@ -86,5 +86,9 @@ public class DessinClasse {
     public void setY(int y) {
         this.y = y;
     }
+
+    public Class getClasse() {
+        return classe;
+    }
 }
 
