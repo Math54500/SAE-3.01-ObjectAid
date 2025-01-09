@@ -32,12 +32,10 @@ public class ControleurFlecheCreation implements EventHandler<MouseEvent> {
         if (x1 == -1) {
             x1 = m.getX();
             y1 = m.getY();
-            System.out.println("Début flèche");
         }
         else {
             model.ajoutFleche(x1, y1, m.getX(), m.getY());
             model.notifierObservateurs() ;
-            System.out.println("Fin flèche");
             x1 = -1 ;
             y1 = -1 ;
         }
