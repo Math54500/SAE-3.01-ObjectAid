@@ -105,4 +105,22 @@ javafx.application.Application <|-- org.example.sae301objectaid.Main
 org.example.sae301objectaid.Observateur <|.. org.example.sae301objectaid.VueClasses
 javafx.event.EventHandler <|.. org.example.sae301objectaid.ControleurFlecheCreation
 javafx.event.EventHandler <|.. org.example.sae301objectaid.ControleurClasse
+org.example.sae301objectaid.ControleurClasse --> org.example.sae301objectaid.Model
+org.example.sae301objectaid.Main --> org.example.sae301objectaid.ControleurClasse
+org.example.sae301objectaid.ControleurSelection --> org.example.sae301objectaid.Model
+org.example.sae301objectaid.Main --> org.example.sae301objectaid.ControleurSelection
+org.example.sae301objectaid.ControleurFlecheCreation --> org.example.sae301objectaid.Model
+org.example.sae301objectaid.Main --> org.example.sae301objectaid.ControleurFlecheCreation
+org.example.sae301objectaid.Main <-- org.example.sae301objectaid.Model
+org.example.sae301objectaid.Observateur <-- org.example.sae301objectaid.Model
+org.example.sae301objectaid.Model <- org.example.sae301objectaid.VueAfficheur
+org.example.sae301objectaid.Main --> org.example.sae301objectaid.VueAfficheur
+org.example.sae301objectaid.Model <- org.example.sae301objectaid.VueClasses
+org.example.sae301objectaid.Main --> org.example.sae301objectaid.VueClasses
+org.example.sae301objectaid.Tree <-- org.example.sae301objectaid.VueAfficheur
+org.example.sae301objectaid.Tree <-- org.example.sae301objectaid.Model
+org.example.sae301objectaid.DessinClasse <-- org.example.sae301objectaid.Model
+org.example.sae301objectaid.DessinFleche <-- org.example.sae301objectaid.Model
+
+
 @enduml
