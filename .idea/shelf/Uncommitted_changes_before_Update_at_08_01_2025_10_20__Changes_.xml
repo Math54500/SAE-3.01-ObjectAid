@@ -1,0 +1,29 @@
+<changelist name="Uncommitted_changes_before_Update_at_08_01_2025_10_20_[Changes]" date="1736328051551" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_01_2025_10_20_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 08/01/2025 10:20 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/VueAfficheur.class" />
+    <option name="AFTER_PATH" value="out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/VueAfficheur.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_01_2025_10_20_[Changes]/VueAfficheur.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Sujet.class" />
+    <option name="AFTER_PATH" value="out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Sujet.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_01_2025_10_20_[Changes]/Sujet.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Tree.class" />
+    <option name="AFTER_PATH" value="out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Tree.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_01_2025_10_20_[Changes]/Tree.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/SAE-3.01-ObjectAid/module-info.class" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Observateur.class" />
+    <option name="AFTER_PATH" value="out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Observateur.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_01_2025_10_20_[Changes]/Observateur.class" />
+  </binary>
+</changelist>
