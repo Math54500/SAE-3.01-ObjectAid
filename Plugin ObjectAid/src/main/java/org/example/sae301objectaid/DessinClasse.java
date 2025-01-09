@@ -29,7 +29,7 @@ public class DessinClasse {
      * @param gc
      * Permet de dessiner le diagramme d'une classe
      */
-    public void dessinerClasse(GraphicsContext gc){
+    public void dessiner(GraphicsContext gc){
         double y2 = y;
         int hauteurTexte = 10 ;
         int largeur = 150 ;

@@ -16,9 +16,8 @@ public class VueClasses implements Observateur{
     }
 
     /**
-     * Fait que dalle
+     * Actualise
      */
-
     @Override
     public void actualiser() {
         this.afficher() ;
@@ -30,7 +29,10 @@ public class VueClasses implements Observateur{
     public void afficher(){
         GraphicsContext gc = model.getCanvas().getGraphicsContext2D() ;
         for (DessinClasse dessinClasse : model.getDessinClasses()){
-            dessinClasse.dessinerClasse(gc);
+            dessinClasse.dessiner(gc);
+        }
+        for (DessinFleche dessinFleche : model.getDessinFleches()){
+            dessinFleche.dessiner(gc) ;
         }
     }
 }

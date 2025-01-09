@@ -12,7 +12,8 @@ import java.util.List;
 public class Model implements Sujet {
     private final List<Observateur> observateurs ;
     private Canvas canvas ;
-    private ArrayList<DessinClasse> dessinClasses = new ArrayList<DessinClasse>() ;
+    private ArrayList<DessinClasse> dessinClasses = new ArrayList<>() ;
+    private ArrayList<DessinFleche> dessinFleches = new ArrayList<>() ;
     private Tree arbre;
 
 
@@ -67,6 +68,10 @@ public class Model implements Sujet {
     }
 
     public ArrayList<DessinClasse> getDessinClasses() {
-        return dessinClasses;
+        return dessinClasses ;
+    }
+
+    public ArrayList<DessinFleche> getDessinFleches() {
+        return dessinFleches ;
     }
 }

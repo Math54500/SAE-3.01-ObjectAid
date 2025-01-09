@@ -19,13 +19,14 @@ public class DessinFleche {
      * @param gc GraphicsContext
      * Permet de créer une flèche
      */
-    public DessinFleche(int x1, int y1, int x2, int y2, GraphicsContext gc) {
+    public DessinFleche(int x1, int y1, int x2, int y2) {
         this.x1 = x1;
         this.y1 = y1;
         this.x2 = x2;
         this.y2 = y2;
+    }
 
-
+    public void dessiner(GraphicsContext gc){
         gc.setFill(Color.BLACK);
         gc.strokeLine(x1, y1, x2, y2);
         double dx = x2 - x1, dy = y2 - y1;
