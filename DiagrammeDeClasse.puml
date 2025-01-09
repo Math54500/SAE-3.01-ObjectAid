@@ -1,0 +1,108 @@
+@startuml
+class org.example.sae301objectaid.VueAfficheur {
+- Model model
+- TreeItem arbre
++ void ajoutArbre(TreeItem)
++ void actualiser()
++ void afficher(TreeItem)
+}
+
+
+interface org.example.sae301objectaid.Observateur {
++ void actualiser()
+}
+
+class org.example.sae301objectaid.Model {
+- List<Observateur> observateurs
+- Canvas canvas
+- ArrayList<DessinClasse> dessinClasses
+- ArrayList<DessinFleche> dessinFleches
+- Tree arbre
++ void enregistrerObservateur(Observateur)
++ void supprimerObservateur(Observateur)
++ void notifierObservateurs()
++ TreeItem afficherFichiers()
++ Canvas getCanvas()
++ void setCanvas(Canvas)
++ void ajoutClasse(String)
++ void ajoutFleche(double,double,double,double)
++ ArrayList<DessinClasse> getDessinClasses()
++ ArrayList<DessinFleche> getDessinFleches()
+}
+
+
+class org.example.sae301objectaid.ControleurSelection {
+- Model model
++ void handle(MouseEvent)
+}
+
+
+class org.example.sae301objectaid.Tree {
++ {static} TreeItem creerArbre(File)
+- {static} void creerArbre(File,TreeItem)
+}
+
+class org.example.sae301objectaid.Main {
++ void start(Stage)
++ {static} void main(String[])
+}
+
+interface org.example.sae301objectaid.Sujet {
++ void enregistrerObservateur(Observateur)
++ void supprimerObservateur(Observateur)
++ void notifierObservateurs()
+}
+
+class org.example.sae301objectaid.VueClasses {
+- Model model
++ void actualiser()
++ void afficher()
+}
+
+
+class org.example.sae301objectaid.DessinClasse {
+- double x
+- double y
+- Class classe
++ void dessiner(GraphicsContext)
++ double getX()
++ void setX(int)
++ double getY()
++ void setY(int)
++ Class getClasse()
+}
+
+
+class org.example.sae301objectaid.DessinFleche {
+- double x1
+- double x2
+- double y1
+- double y2
++ void dessiner(GraphicsContext)
+}
+
+
+class org.example.sae301objectaid.ControleurFlecheCreation {
+- Model model
+~ double x1
+~ double y1
++ void handle(MouseEvent)
+}
+
+
+class org.example.sae301objectaid.ControleurClasse {
+- Model model
++ void handle(MouseEvent)
+}
+
+
+
+
+org.example.sae301objectaid.Observateur <|.. org.example.sae301objectaid.VueAfficheur
+org.example.sae301objectaid.Sujet <|.. org.example.sae301objectaid.Model
+javafx.event.EventHandler <|.. org.example.sae301objectaid.ControleurSelection
+javafx.application.Application <|-- org.example.sae301objectaid.Main
+org.example.sae301objectaid.Observateur <|.. org.example.sae301objectaid.VueClasses
+javafx.event.EventHandler <|.. org.example.sae301objectaid.ControleurFlecheCreation
+javafx.event.EventHandler <|.. org.example.sae301objectaid.ControleurClasse
+@enduml
