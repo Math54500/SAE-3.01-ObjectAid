@@ -5,11 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13048742-1aa6-4d6c-852f-d6f8691c043c" name="Changes" comment="corref">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_01_2025_14_24__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_01_2025_14_24__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_01_2025_08_20__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_01_2025_08_20__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_01_2025_08_46__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_01_2025_08_46__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_01_2025_10_20__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_01_2025_10_20__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/DessinClasse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/DessinClasse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/DessinFleche.java" beforeDir="false" afterPath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/DessinFleche.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/VueClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/Plugin ObjectAid/src/main/java/org/example/sae301objectaid/VueClasses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/module-info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/ControleurClasse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/ControleurFlecheCreation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/ControleurSelection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/DessinClasse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/DessinFleche.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Model.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Observateur.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Sujet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/VueAfficheur.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAE-3.01-ObjectAid/org/example/sae301objectaid/VueClasses.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +36,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="UML Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -56,7 +70,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Elève/Documents/GitHub/SAE-3.01-ObjectAid/Documents/Itération 4&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Elève/Documents/GitHub/SAE-3.01-ObjectAid/Documents&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -68,6 +82,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Elève\Documents\GitHub\SAE-3.01-ObjectAid\Documents" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Application" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.example.sae301objectaid.Main" />
@@ -99,7 +118,8 @@
       <workItem from="1736254246734" duration="1270000" />
       <workItem from="1736321558514" duration="636000" />
       <workItem from="1736341345750" duration="11286000" />
-      <workItem from="1736407533515" duration="809000" />
+      <workItem from="1736407533515" duration="12779000" />
+      <workItem from="1736494440245" duration="1230000" />
     </task>
     <task id="LOCAL-00001" summary="modification ControleurSelection 3">
       <option name="closed" value="true" />
